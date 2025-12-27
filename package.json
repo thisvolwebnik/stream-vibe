@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "minista",
+    "start": "minista --open",
     "build": "minista build",
     "preview": "minista preview",
     "format": "prettier --write .",
