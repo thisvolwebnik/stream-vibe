@@ -38,7 +38,7 @@ export default defineConfig({
       },
     },
     fonts: {
-      outDir: "assets/fonts",
+      outDir: "assets/fonts.scss",
       outName: "[name]",
     },
     bundle: {

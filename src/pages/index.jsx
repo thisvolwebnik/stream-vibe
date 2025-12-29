@@ -1,13 +1,5 @@
-import { Head } from "minista";
-import "../styles/style.scss";
+export const metadata = { title: "Home" };
 
 export default function () {
-  return (
-    <>
-      <Head>
-        <title>Hello!</title>
-      </Head>
-      <h1>Hello!</h1>
-    </>
-  );
+  return <></>;
 }
