@@ -2,6 +2,7 @@ import "./Header.scss";
 import Logo from "@/components/Logo";
 import classNames from "classnames";
 import Button from "@/components/Button";
+import BurgerButton from "@/components/BurgerButton";
 
 const Header = (props) => {
   const { url } = props;
@@ -38,6 +39,7 @@ const Header = (props) => {
             mode="transparent"
           />
         </div>
+        <BurgerButton className="header__burger-button" />
       </div>
     </header>
   );
