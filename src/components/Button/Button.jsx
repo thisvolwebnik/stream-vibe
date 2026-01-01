@@ -16,9 +16,10 @@ const Button = (props) => {
      * */
     iconPosition = "before",
     /*
-     * "" (default) | "transparent"
+     * "" (default) | "transparent" | black-10
      * */
     mode = "",
+    hasFill,
   } = props;
 
   const isLink = href !== undefined;
@@ -27,7 +28,7 @@ const Button = (props) => {
   const buttonProps = { type };
   const specificProps = isLink ? linkProps : buttonProps;
   const title = !isLabelHidden ? label : undefined;
-  const iconComponent = iconName && <Icon className="button__icon" name={iconName} />;
+  const iconComponent = iconName && <Icon className="button__icon" name={iconName} hasFill={hasFill} />;
 
   return (
     <Component

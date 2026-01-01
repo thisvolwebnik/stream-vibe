@@ -6,7 +6,7 @@ const Logo = (props) => {
   const title = "Home";
 
   return (
-    <a className={classNames(className, "logo")} href="/public" title={title} aria-label={title}>
+    <a className={classNames(className, "logo")} href="/" title={title} aria-label={title}>
       <img
         className="logo__image"
         src="/icons/Logo.svg"

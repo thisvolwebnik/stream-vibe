@@ -18,7 +18,7 @@ export default function (props) {
         <script src="/src/main.js" type="module" />
       </Head>
       <Header url={url} />
-      <Content>{children}</Content>
+      <Content>Content</Content>
       <Footer />
     </>
   );
