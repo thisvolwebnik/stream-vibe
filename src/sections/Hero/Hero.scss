@@ -44,6 +44,8 @@
   }
 
   &__description {
+    max-width: 1100px;
+    margin-inline: auto;
     margin-bottom: fluid(50, 30);
   }
 
