@@ -1,0 +1,33 @@
+import "./Questions.scss";
+import classNames from "classnames";
+import Section from "@/layouts/Section";
+import Button from "@/components/Button";
+import AccordionGroup from "@/components/AccordionGroup";
+
+const Questions = (props) => {
+  const { className } = props;
+  const questionItems = [
+    "What is StreamVibe?",
+    "How do I sign up for StreamVibe?",
+    "What is the StreamVibe free trial?",
+    "How much does StreamVibe cost?",
+    "How do I contact StreamVibe customer support?",
+    "What content is available on StreamVibe?",
+    "What are the StreamVibe payment methods?",
+    "How can I watch StreamVibe?",
+  ];
+
+  return (
+    <Section
+      className={classNames(className, "questions")}
+      title="Frequently Asked Questions"
+      titleId="questions-title"
+      description="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
+      actions={<Button label="Ask a Question" href="/support" />}
+    >
+      <AccordionGroup columns={2}>{questionItems}</AccordionGroup>
+    </Section>
+  );
+};
+
+export default Questions;
