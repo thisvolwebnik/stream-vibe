@@ -1,0 +1,33 @@
+.tabs-navigation {
+  display: flex;
+  padding: fluid-to-laptop(10, 8);
+  background-color: var(--color-black-08);
+  border: var(--border);
+  border-radius: var(--border-radius-m);
+
+  @include laptop {
+    border-radius: var(--border-radius-s);
+  }
+
+  &__button {
+    padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
+    white-space: nowrap;
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+    user-select: none;
+
+    @include laptop {
+      border-radius: var(--border-radius-xs);
+    }
+
+    @include hover {
+      color: var(--color-white);
+    }
+
+    &.is-active {
+      color: var(--color-white);
+      pointer-events: none;
+    }
+  }
+}
