@@ -3,9 +3,10 @@ import "@/styles";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 import Content from "@/layouts/Content";
+import Banner from "@/sections/Banner";
 
 export default function (props) {
-  const { children, title, url } = props;
+  const { children, title, url, isHeaderFixed } = props;
 
   return (
     <>
@@ -17,8 +18,11 @@ export default function (props) {
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <script src="/src/main.js" type="module" />
       </Head>
-      <Header url={url} />
-      <Content>Content</Content>
+      <Header url={url} isFixed={isHeaderFixed} />
+      <Content isResetPaddingTop={isHeaderFixed}>
+        {children}
+        <Banner />
+      </Content>
       <Footer />
     </>
   );
