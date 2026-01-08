@@ -22,7 +22,12 @@ const Slider = (props) => {
     children,
     navigationTargetElementId = null,
     sliderParams = defaultSliderParams,
-    hasScrollbar = true,
+    hasScrollbarOnMobile = true,
+    /*
+     * "" (default) | "abs-bottom"
+     * */
+    navigationPosition = "",
+    isNavigationHiddenMobile = true,
   } = props;
 
   return (
@@ -39,8 +44,14 @@ const Slider = (props) => {
           ))}
         </ul>
       </div>
-      {!navigationTargetElementId && <SliderNavigation className="slider__navigation" />}
-      {hasScrollbar && <div className="slider__scrollbar visible-mobile" data-js-slider-scrollbar="" />}
+      {!navigationTargetElementId && (
+        <SliderNavigation
+          className="slider__navigation"
+          position={navigationPosition}
+          isHiddenMobile={isNavigationHiddenMobile}
+        />
+      )}
+      {hasScrollbarOnMobile && <div className="slider__scrollbar visible-mobile" data-js-slider-scrollbar="" />}
     </div>
   );
 };

@@ -3,11 +3,15 @@ import classNames from "classnames";
 import Button from "@/components/Button";
 
 const SliderNavigation = (props) => {
-  const { className, id, hasPagination = true, mode = "" } = props;
+  const { className, id, hasPagination = true, mode = "", position, isHiddenMobile } = props;
 
   return (
     <div
-      className={classNames(className, "slider-navigation", { [`slider-navigation--${mode}`]: mode })}
+      className={classNames(className, "slider-navigation", {
+        [`slider-navigation--${mode}`]: mode,
+        [`slider-navigation--${position}`]: position,
+        "hidden-mobile": isHiddenMobile,
+      })}
       id={id}
       data-js-slider-navigation=""
     >

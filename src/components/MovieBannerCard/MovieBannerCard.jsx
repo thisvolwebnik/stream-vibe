@@ -17,7 +17,7 @@ const MovieBannerCard = (props) => {
           </div>
         </div>
         <div className="movie-banner-card__footer">
-          <Button className="movie-banner-card__play-button" iconName="play" label="Play Now" />
+          <Button className="movie-banner-card__play-button" iconName="play" label="Play Now" hasFill />
           <div className="movie-banner-card__actions">
             <Button mode="black-06" iconName="plus" label="Add to playlist" isLabelHidden />
             <Button mode="black-06" iconName="like" label="Like" isLabelHidden />
