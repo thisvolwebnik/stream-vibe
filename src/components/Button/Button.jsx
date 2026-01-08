@@ -16,7 +16,7 @@ const Button = (props) => {
      * */
     iconPosition = "before",
     /*
-     * "" (default) | "transparent" | black-10 | black-08
+     * "" (default) | "transparent" | black-10 | black-08 | black-06
      * */
     mode = "",
     hasFill,

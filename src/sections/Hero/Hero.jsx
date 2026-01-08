@@ -1,6 +1,7 @@
 import "./Hero.scss";
 import classNames from "classnames";
 import Button from "@/components/Button";
+import { Image } from "minista";
 
 const Hero = (props) => {
   const { className } = props;

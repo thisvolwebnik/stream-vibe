@@ -7,14 +7,7 @@ const Logo = (props) => {
 
   return (
     <a className={classNames(className, "logo")} href="/" title={title} aria-label={title}>
-      <img
-        className="logo__image"
-        src="/icons/Logo.svg"
-        alt="Logo Stream Vibe"
-        width="199"
-        height="60"
-        loading={loading}
-      />
+      <img className="logo__image" src="/icons/Logo.svg" alt="Logo Stream Vibe" loading={loading} />
     </a>
   );
 };

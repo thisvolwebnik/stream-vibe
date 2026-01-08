@@ -1,3 +1,5 @@
 .logo {
-  width: fluid(199, 116);
+  &__image {
+    width: fluid(199, 116);
+  }
 }
